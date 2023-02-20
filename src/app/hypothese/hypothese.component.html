@@ -1,0 +1,25 @@
+<div class="hypothese-container">
+    <div class="hypothese-header">
+      <h3 class="hypothese-title">Hypothèse</h3>
+      <button class="add-button"(click)="toggleDropdown()">Ajouter +</button>
+    </div>
+    <div class="hypothese-body"  *ngIf="showDropdown">
+      <div class="input-container">
+        <label for="code">Code:</label>
+        <input type="text" id="code" name="code">
+        <label for="libelle" >Libelle:</label>
+        <input type="text" id="libelle" name="libelle"[(ngModel)]="valeurLibelle">
+      </div>
+      <label for="commentaire">Commentaire:</label>
+      <textarea id="commentaire" name="commentaire"></textarea>
+    </div>
+    <div class="hypothese-footer"  *ngIf="showDropdown">
+        <button class="remove-button"(click)="supprimerInput()">Supprimer</button>
+        <button class="quit-button">Quitter</button>
+        <button class="validate-button" (click)="afficherNouveauComposant()">Valider</button>
+       
+    </div>
+    <p  *ngIf="ecriture" >{{valeurLibelle}}</p>
+  </div>
+  <app-periode *ngIf="nouveauComposantVisible"></app-periode>
+  

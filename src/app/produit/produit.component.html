@@ -1,0 +1,47 @@
+<!-- produit.component.html -->
+<div class="product-container">
+    <div class="produit-header">
+        <h3 class="hypothese-title">Produits</h3>
+        <button class="add-button" (click)="toggleDropdown()">Ajouter +</button>
+      </div>
+  <div class="produit-body" *ngIf="showDropdown">
+      <div class="product-row1">
+        <label for="idliste"> Catégorie </label>
+      <select id="idliste" class="category-dropdown">
+        <option></option>
+        <option>Dépots banques</option>
+        <option>Prets de banques</option>
+        <option>Emplois clients</option>
+        <option>Depots clients</option>
+        <option>Engagement émis</option>
+        <option>Engagement recus</option>
+
+      </select>
+      <input type="text" class="code-input" placeholder="Code">
+    </div>
+    <div class="product-row2">
+      <label for="idliste2">Groupe</label>
+      <select id="idliste2" class="group-dropdown">
+        <option></option>
+        <option>Escompte</option>
+        <option>Crédit exploitation</option>
+        <option>Prets équipement</option>
+        <option>Crédit immobilier</option>
+        <option>Préfinancement</option>
+        <option>Découvert</option>
+
+
+      </select>
+      <input type="text" class="code-input" placeholder="Code">
+    </div>
+</div>
+
+      <div class="hypothese-footer" *ngIf="showDropdown">
+        <button class="remove-button">Supprimer</button>
+        <button class="quit-button">Quitter</button>
+        <button class="validate-button">Valider</button>
+    </div>
+     
+   
+  </div>
+  

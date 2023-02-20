@@ -1,0 +1,89 @@
+<div class="component-3">
+    <div class="header">
+      <div class="periode-header">
+        <h3 class="hypothese-title">Période</h3>
+      <button class="add-button" (click)="toggleDropdown()">Ajouter +</button>
+      </div>
+      
+      <div class="period-buttons" *ngIf="showDropdown" >   
+             <div class="debut">
+                 <label for="start">Start month:</label><input type="month" id="start" name="start">
+             </div>
+             <div class="fin">
+                <label for="end">end month:</label>  <input type="month" id="start" name="start">
+             </div>
+      </div>
+
+    </div>
+    <table *ngIf="showDropdown">
+        <thead>
+          <tr>
+            <th></th>
+            <th>1 mois</th>
+            <th>2 mois</th>
+            <th>3 mois</th>
+            <th>6 mois</th>
+            <th>1 an</th>
+            <th>2 ans</th>
+            <th>5 ans</th>
+            <th>10 ans</th>
+            <th>30 ans</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bid</td>
+           <td><input type="text" name="bid"></td>
+            <td><input type="text" name="bid"></td>
+            <td><input type="text" name="bid"></td>
+            <td><input type="text" name="bid"></td>
+            <td><input type="text" name="bid"></td>
+            <td><input type="text" name="bid"></td>
+            <td><input type="text" name="bid"></td>
+            <td><input type="text" name="bid"></td>
+            <td><input type="text" name="bid"></td>
+          </tr>
+          <tr>
+            <td>mean </td>
+            <td><input type="text" name="mean"></td>
+            <td><input type="text" name="mean"></td>
+            <td><input type="text" name="mean"></td>
+            <td><input type="text" name="mean"></td>
+            <td><input type="text" name="mean"></td>
+            <td><input type="text" name="mean"></td>
+            <td><input type="text" name="mean"></td>
+            <td><input type="text" name="mean"></td>
+            <td><input type="text" name="mean"></td>
+          </tr>
+          <tr>
+            <td>ask</td>
+            <td><input type="text" name="ask"></td>
+            <td><input type="text" name="ask"></td>
+            <td><input type="text" name="ask"></td>
+            <td><input type="text" name="ask"></td>
+            <td><input type="text" name="ask"></td>
+            <td><input type="text" name="ask"></td>
+            <td><input type="text" name="ask"></td>
+            <td><input type="text" name="ask"></td>
+            <td><input type="text" name="ask"></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <div class="footer" *ngIf="showDropdown">
+        <div class="maj">
+             <div class="date">
+                <label for="start">date MAJ:</label> <input type="date" id="start" name="trip-start">
+             </div>
+            <div class="oper">
+                 <label for="name">Oper:</label> <input type="text" id="name" name="name" >
+             </div>
+        </div>
+      <div class="exit-buttons">
+        <button class="delete-cell-button">Supprimer</button>
+        <button class="quit-button">Quitter</button>
+        <button class="validate-button">Valider</button>
+       
+      </div>
+    </div>
+  </div>

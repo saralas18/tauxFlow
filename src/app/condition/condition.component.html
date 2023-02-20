@@ -1,0 +1,94 @@
+<div class="condition-container">
+    <div class="condition-header">
+    <div class="condititon-title">Conditions</div>
+    <button class="add-button" (click)="toggleDropdown()">Ajouter +</button>
+    </div>
+    <div class="condition-body" *ngIf="showDropdown">
+      <div class="input-row1">
+        <label for="input1">Du mois:</label>
+        <input type="text" id="input1">
+        <label for="input2">au mois:</label>
+        <input type="text" id="input2">
+        <label for="input3">   rythme évolution annuel:</label>
+        <input type="text" id="input3">
+        <label for="input4">    % soit par mois:</label>
+        <input type="text" id="input4">
+      </div>
+      <div class="input-row2">
+        <label for="input1">Indexé:</label>
+        <input type="text" id="input1">
+        <label for="input2">Marge:</label>
+        <input type="text" id="input2">
+       
+    </div>
+      <div class="table-row"> <p>Répartition par durée en %:</p>
+
+            <label for="input1">1m:</label>
+            <input type="text" id="input1">
+            <label for="input2">3m:</label>
+            <input type="text" id="input2">
+            <label for="input3">6m:</label>
+            <input type="text" id="input3">
+            <label for="input4">9m:</label>
+            <input type="text" id="input4">
+            <label for="input5">1a:</label>
+            <input type="text" id="input5">
+            <label for="input6">2a:</label>
+            <input type="text" id="input6">
+            <label for="input7">3a:</label>
+            <input type="text" id="input7">
+            <label for="input8">4a:</label>
+            <input type="text" id="input8">
+            <label for="input9">5a:</label>
+            <input type="text" id="input9">
+            <label for="input10">7a:</label>
+            <input type="text" id="input10">
+            <label for="input11">10a:</label>
+            <input type="text" id="input11">
+            <label for="input12">15a:</label>
+            <input type="text" id="input12">
+            <label for="input13">20a:</label>
+            <input type="text" id="input13">
+      </div>
+      <div class="input-row3">
+        <label for="input5">Fixe:</label>
+        <input type="text" id="input5">
+        <label for="input6">Marge:</label>
+        <input type="text" id="input6">
+      </div>
+
+          <div class="table-row"> <p>Répartition par durée en %:</p>
+            <label for="input1">1m:</label>
+            <input type="text" id="input1">
+            <label for="input2">3m:</label>
+            <input type="text" id="input2">
+            <label for="input3">6m:</label>
+            <input type="text" id="input3">
+            <label for="input4">9m:</label>
+            <input type="text" id="input4">
+            <label for="input5">1a:</label>
+            <input type="text" id="input5">
+            <label for="input6">2a:</label>
+            <input type="text" id="input6">
+            <label for="input7">3a:</label>
+            <input type="text" id="input7">
+            <label for="input8">4a:</label>
+            <input type="text" id="input8">
+            <label for="input9">5a:</label>
+            <input type="text" id="input9">
+            <label for="input10">7a:</label>
+            <input type="text" id="input10">
+            <label for="input11">10a:</label>
+            <input type="text" id="input11">
+            <label for="input12">15a:</label>
+            <input type="text" id="input12">
+            <label for="input13">20a:</label>
+            <input type="text" id="input13">
+      </div>
+    </div>
+    <div class="condition-actions" *ngIf="showDropdown">
+      <button class="remove-button">Supprimer</button>
+      <button class="quit-button">Quitter</button>
+      <button class="validate-button">Valider</button>
+    </div>
+  </div>

@@ -1,0 +1,24 @@
+
+<div class="devise-container">
+  <div class="devise-header">
+  <div class="devise-title">Devise</div>
+  <button class="add-button" (click)="toggleDropdown()">Ajouter +</button>
+  
+  </div>
+  
+   <div class="devise-body" *ngIf="showDropdown">
+    <label for="maListeDeroulante">Devise </label>
+<select id="maListeDeroulante" [(ngModel)]="valeurSelectionnee">
+  <option *ngFor="let option of listeDevise" [value]="option">{{option}}</option>
+</select>
+    
+  </div>
+  <div class="devise-actions" *ngIf="showDropdown">
+    <button class="remove-button"(click)="supprimerInput()">Supprimer</button>
+    <button class="quit-button">Quitter</button>
+    <button class="validate-button" (click)="afficherNouveauComposant()">Valider</button>
+  </div>
+  <p  *ngIf="ecriture" >{{valeurSelectionnee}}</p>
+
+</div>
+<app-hypothese *ngIf="nouveauComposantVisible"></app-hypothese>

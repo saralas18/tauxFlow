@@ -1,0 +1,125 @@
+.condition-container {
+    position: relative;
+    padding-left: 200px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    padding-bottom: 80px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-top: 50PX;
+    margin-top: 20PX;
+  }
+  
+  .condition-header {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 30px;
+  }
+  
+  .condititon-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: inherit;
+  }
+  
+  .add-button {
+    margin-right: 10px;
+    padding-left: 250px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  .input-row1,.input-row2,.input-row3{
+    
+    display: flex;
+    align-items: right;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: right;
+  }
+  .input-row1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .input-row2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+   }
+   .input-row3{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+   }
+   .table-row {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    padding-left: 300px;
+  }
+  .table-row input {
+    width: 1%;
+    align-items: right;
+    justify-content: right;
+  }
+   
+  
+  label {
+    margin: 5px;
+  }
+  
+
+
+  
+ 
+
+
+
+
+
+
+.condition-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .validate-button, .quit-button, .remove-button {
+    padding-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .validate-button {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  .quit-button{
+    background-color: gray;
+    color: #fff;
+
+  }
+  .remove-button {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
