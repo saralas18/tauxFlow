@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { VolumeEnCoursComponent } from '../volume-en-cours/volume-en-cours.component';
 
 @Component({
   selector: 'app-hypothese',

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ValidationService } from '../validation-service';
 
 @Component({
   selector: 'app-renegocition',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class RenegocitionComponent {
 renego=true;
+constructor(public validationService: ValidationService) { }
+
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ValidationService } from '../validation-service';
 
 @Component({
   selector: 'app-devise',
@@ -15,11 +16,12 @@ export class DeviseComponent {
     this.showDropdown = !this.showDropdown;
   }
 
+  constructor(private validationService: ValidationService) { }
+ 
   nouveauComposantVisible = false;
   ecriture = false ;
-
   afficherNouveauComposant() {
-   
+    this.validationService.deviseValide = true;
     this.nouveauComposantVisible = true;
     this.ecriture = true;
   } 
@@ -27,4 +29,5 @@ export class DeviseComponent {
     this.valeurSelectionnee = '';
     this.nouveauComposantVisible = false;
   }
+
 }

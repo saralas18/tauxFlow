@@ -6,7 +6,7 @@
   
   </div>
   
-   <div class="devise-body" *ngIf="showDropdown">
+   <div class="devise-body" id="elementprincipal" *ngIf="showDropdown">
     <label for="maListeDeroulante">Devise </label>
 <select id="maListeDeroulante" [(ngModel)]="valeurSelectionnee">
   <option *ngFor="let option of listeDevise" [value]="option">{{option}}</option>
@@ -21,4 +21,3 @@
   <p  *ngIf="ecriture" >{{valeurSelectionnee}}</p>
 
 </div>
-<app-hypothese *ngIf="nouveauComposantVisible"></app-hypothese>

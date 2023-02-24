@@ -1,4 +1,6 @@
 <h1>Hypothèses d'évolution de volume des encours</h1>
 <app-devise></app-devise>
-<app-produit></app-produit>
+<ng-container *ngIf="validationService.deviseValide">
+<app-hypothese></app-hypothese>  
+</ng-container>
 <app-condition></app-condition>

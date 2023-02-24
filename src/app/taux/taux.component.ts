@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { HypotheseComponent } from '../hypothese/hypothese.component';
-
+import { ValidationService } from '../validation-service';
 @Component({
   selector: 'app-taux',
   templateUrl: './taux.component.html',
@@ -8,7 +7,7 @@ import { HypotheseComponent } from '../hypothese/hypothese.component';
 })
 export class TauxComponent {
   taux=true;
-
+  constructor(public validationService: ValidationService) { }
 
 
 }

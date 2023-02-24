@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ValidationService } from '../validation-service';
 
 @Component({
   selector: 'app-volume-en-cours',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./volume-en-cours.component.css']
 })
 export class VolumeEnCoursComponent {
-
+volume !: string;
+constructor(public validationService: ValidationService) { }
 }
