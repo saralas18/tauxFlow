@@ -9,21 +9,25 @@ import { VolumeEnCoursComponent } from '../volume-en-cours/volume-en-cours.compo
 export class HypotheseComponent {
   showDropdown = false;
   valeurLibelle !: string;
- 
+  displayedValues: string[] = [];
+
+  addValue() {
+    this.displayedValues.push(this.valeurLibelle);
+    this.valeurLibelle = ''; // Optionnel : pour vider l'input après chaque ajout
+  }
+
+
   toggleDropdown() {
     this.showDropdown = !this.showDropdown;
   }
 
-  nouveauComposantVisible = false;
-  ecriture = false ;
 
-  afficherNouveauComposant() {
-   
-    this.nouveauComposantVisible = true;
-    this.ecriture = true;
-  }
-  supprimerInput() {
-    this.valeurLibelle = '';
-    this.nouveauComposantVisible = false;
+
+  supprimerInput(value: string)
+  {
+    const index = this.displayedValues.indexOf(value);
+    if (index !== -1) {
+      this.displayedValues.splice(index, 1);
+    }
   }
 }
