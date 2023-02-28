@@ -10,12 +10,9 @@ export class HypotheseComponent {
   showDropdown = false;
   valeurLibelle !: string;
  
-
-  
   toggleDropdown() {
     this.showDropdown = !this.showDropdown;
   }
-
 
   nouveauComposantVisible = false;
   ecriture = false ;

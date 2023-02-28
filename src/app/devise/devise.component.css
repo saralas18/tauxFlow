@@ -35,6 +35,12 @@
   border: none;
   cursor: pointer;
 }
+.vertical-line{
+  border-left: 2px solid #000;
+  display: inline-block;
+  height: 100px;
+  margin: 0 20px;
+}
 
 #elementprincipal {
   padding-top: 10px;

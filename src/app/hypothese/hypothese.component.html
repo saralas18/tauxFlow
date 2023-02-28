@@ -10,8 +10,10 @@
         <label for="libelle" >Libelle:</label>
         <input type="text" id="libelle" name="libelle"[(ngModel)]="valeurLibelle">
       </div>
-      <label for="commentaire">Commentaire:</label>
-      <textarea id="commentaire" name="commentaire"></textarea>
+      <div class="commentaire">
+        <label for="commentaire">Commentaire:</label>
+        <textarea id="commentaire" name="commentaire"></textarea>
+     </div>
     </div>
     <div class="hypothese-footer"  *ngIf="showDropdown">
         <button class="remove-button"(click)="supprimerInput()">Supprimer</button>
@@ -21,5 +23,4 @@
     </div>
     <p  *ngIf="ecriture" >{{valeurLibelle}}</p>
   </div>
-  <app-periode *ngIf="nouveauComposantVisible"></app-periode>
   

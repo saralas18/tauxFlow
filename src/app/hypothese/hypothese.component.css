@@ -34,25 +34,35 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    margin-left: 50px;
   }
   
-  .input-container {
+  .input-container{
+    padding-left: 60px;
+    width: 50%;
     display: flex;
     margin-bottom: 20px;
 
   }
+  .hypothese-body {
+    text-align: center;
+    padding-left:240px ;
+  }
   
-  label {
+  .hypothese-body label {
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-right: 20px;
     margin-left: 20px;
   }
-  
+  .commentaire {
+    display: flex;
+    margin-bottom: 20px;
+  }
   input[type="text"], textarea {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
-    width: 98%;
+    width: 70%;
   }
   
   .hypothese-footer {

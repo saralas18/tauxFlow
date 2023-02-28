@@ -66,7 +66,9 @@ label {
     width: 100%;
   }
   
- 
+ .tablesection {
+  padding-left: 200px;
+ }
   table {
     border: none;
     border-color: #ccc;
@@ -130,6 +132,7 @@ label {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    padding-left: 20%;
   }
   .date {
 margin-right: 30px;
