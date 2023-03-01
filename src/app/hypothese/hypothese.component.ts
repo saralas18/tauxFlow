@@ -11,10 +11,6 @@ export class HypotheseComponent {
   valeurLibelle !: string;
   displayedValues: string[] = [];
 
-  addValue() {
-    this.displayedValues.push(this.valeurLibelle);
-    this.valeurLibelle = ''; // Optionnel : pour vider l'input après chaque ajout
-  }
 
 
   toggleDropdown() {
@@ -22,12 +18,16 @@ export class HypotheseComponent {
   }
 
 
-
-  supprimerInput(value: string)
-  {
-    const index = this.displayedValues.indexOf(value);
-    if (index !== -1) {
-      this.displayedValues.splice(index, 1);
-    }
+  addValue() {
+    this.displayedValues.push(this.valeurLibelle);
+    this.valeurLibelle = ''; // Optionnel : pour vider l'input après chaque ajout
   }
-}
+
+
+
+  supprimerInput() {
+    for (let i = this.displayedValues.length - 1; i >= 0; i--) {
+      this.displayedValues.splice(i, 1);
+    }    }
+  }
+

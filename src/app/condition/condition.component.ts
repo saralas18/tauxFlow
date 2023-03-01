@@ -7,9 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ConditionComponent {
   showDropdown = false;
+  valeurLibelleDebut !: string;
+  valeurLibelleFin !: string;
+  ecrire = false;
 
   toggleDropdown() {
     this.showDropdown = !this.showDropdown;
   }
-
+validerElement(){
+this.ecrire=true;
+}
 }

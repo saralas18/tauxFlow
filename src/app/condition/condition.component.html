@@ -5,10 +5,10 @@
     </div>
     <div class="condition-body" *ngIf="showDropdown">
       <div class="input-row1">
-        <label for="input1">Du mois:</label>
-        <input type="text" id="input1">
+        <label for="input1" >Du mois:</label>
+        <input type="text" id="input1" [(ngModel)]="valeurLibelleDebut">
         <label for="input2">au mois:</label>
-        <input type="text" id="input2">
+        <input type="text" id="input2" [(ngModel)]="valeurLibelleFin">
         <label for="input3">   rythme évolution annuel:</label>
         <input type="text" id="input3">
         <label for="input4">     soit par mois:</label>
@@ -89,6 +89,7 @@
     <div class="condition-actions" *ngIf="showDropdown">
       <button class="remove-button">Supprimer</button>
       <button class="quit-button">Quitter</button>
-      <button class="validate-button">Valider</button>
+      <button class="validate-button"(click)="validerElement()">Valider</button>
     </div>
+    <p *ngIf="ecrire">{{valeurLibelleDebut}} a  {{valeurLibelleFin}}</p>
   </div>

@@ -7,10 +7,10 @@
       
       <div class="period-buttons" *ngIf="showDropdown" >   
              <div class="debut">
-                 <label for="start">Start month:</label><input type="month" id="start" name="start">
+                 <label for="start">Start month:</label><input type="month" id="start" name="start" [(ngModel)]="selectedMonthStart">
              </div>
              <div class="fin">
-                <label for="end">end month:</label>  <input type="month" id="start" name="start">
+                <label for="end">end month:</label>  <input type="month" id="start" name="start" [(ngModel)]="selectedMonthEnd">
              </div>
       </div>
 
@@ -83,8 +83,9 @@
       <div class="exit-buttons">
         <button class="delete-cell-button">Supprimer</button>
         <button class="quit-button">Quitter</button>
-        <button class="validate-button">Valider</button>
+        <button class="validate-button" (click)="validerElement()">Valider</button>
        
       </div>
     </div>
+    <p class="periode-header" *ngIf="ecriture">de    {{ selectedMonthStart | date: 'MM' }} a   {{selectedMonthEnd | date : 'MM'}}</p>
   </div>

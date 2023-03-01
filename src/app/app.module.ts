@@ -20,7 +20,8 @@ import { DefaillanceComponent } from './defaillance/defaillance.component';
 const routes: Routes = [
   { path: 'taux', component: TauxComponent},
   { path: 'volume-en-cours', component: VolumeEnCoursComponent},
-  { path: 'renegociation', component: RenegocitionComponent}
+  { path: 'renegociation', component: RenegocitionComponent},
+  { path: 'defaillance', component: DefaillanceComponent}
 ];
 
 

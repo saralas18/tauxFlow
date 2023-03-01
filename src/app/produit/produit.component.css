@@ -87,7 +87,10 @@
     cursor: pointer;
     margin-left: 20px;
   }
-  
+  .affichage {
+    display: inline;
+    font-weight: 200;
+  }
   .validate-button {
     background-color: #4CAF50;
     color: #fff;

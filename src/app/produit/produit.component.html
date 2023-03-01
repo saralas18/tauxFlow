@@ -7,41 +7,27 @@
   <div class="produit-body" *ngIf="showDropdown">
       <div class="product-row1">
         <label for="idliste"> Catégorie </label>
-      <select id="idliste" class="category-dropdown">
-        <option></option>
-        <option>Dépots banques</option>
-        <option>Prets de banques</option>
-        <option>Emplois clients</option>
-        <option>Depots clients</option>
-        <option>Engagement émis</option>
-        <option>Engagement recus</option>
-
-      </select>
-      <input type="text" class="code-input" placeholder="Code">
+        <select id="idliste" class="category-dropdown" [(ngModel)]="valeurSelectionneeCategorie">
+          <option *ngFor="let option of listeCategorie" [value]="option">{{option}}</option>
+        </select>
+    <input type="text" class="code-input" placeholder="Code">
     </div>
     <div class="product-row2">
       <label for="idliste2">Groupe</label>
-      <select id="idliste2" class="group-dropdown">
-        <option></option>
-        <option>Escompte</option>
-        <option>Crédit exploitation</option>
-        <option>Prets équipement</option>
-        <option>Crédit immobilier</option>
-        <option>Préfinancement</option>
-        <option>Découvert</option>
-
-
+      <select id="idliste2" class="group-dropdown" [(ngModel)]="valeurSelectionneeGroupe">
+        <option *ngFor="let option of listeGroupe" [value]="option">{{option}}</option>
       </select>
+      
       <input type="text" class="code-input" placeholder="Code">
     </div>
 </div>
 
       <div class="hypothese-footer" *ngIf="showDropdown">
-        <button class="remove-button">Supprimer</button>
+        <button class="remove-button"(click)="supprimerElement()" >Supprimer</button>
         <button class="quit-button">Quitter</button>
-        <button class="validate-button">Valider</button>
+        <button class="validate-button"(click)="validerElement()" >Valider</button>
     </div>
      
-   
+    <p class="affichage" *ngIf="valider" >{{valeurSelectionneeGroupe}}</p>
   </div>
   

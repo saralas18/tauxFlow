@@ -8,7 +8,7 @@
         <label for="code">Code:</label>
         <input type="text" id="code" name="code">
         <label for="libelle" >Libelle:</label>
-        <input type="text" id="libelle" name="libelle"[(ngModel)]="valeurLibelle" >
+        <input type="text" id="libelle" name="libelle"[(ngModel)]="valeurLibelle">
       </div>
       <div class="commentaire">
         <label for="commentaire">Commentaire:</label>
@@ -17,10 +17,10 @@
   
     </div>
     <div class="hypothese-footer"  *ngIf="showDropdown">
-        <button class="remove-button"(click)="supprimerInput(valeurLibelle)">Supprimer</button>
+          <button class= "remove-button"(click)="supprimerInput()">Supprimer</button>
         <button class="quit-button">Quitter</button>
         <button class="validate-button" (click)="addValue()">Valider</button>
-       
+     
     </div>
     <p *ngFor="let value of displayedValues">{{value}}</p>
   </div>
