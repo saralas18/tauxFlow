@@ -34,6 +34,16 @@
     border: none;
     cursor: pointer;
   }
+  .vertical-line {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 2px;
+    height: 100%;
+    border-left: 2px solid #000;
+    background-color: #000;
+    margin-left: 250px;
+  }
   .input-row1,.input-row2,.input-row3{
     
     display: flex;

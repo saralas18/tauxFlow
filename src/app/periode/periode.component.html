@@ -4,7 +4,8 @@
         <h3 class="hypothese-title">Période</h3>
       <button class="add-button" (click)="toggleDropdown()">Ajouter +</button>
       </div>
-      
+      <div class="vertical-line"></div>
+
       <div class="period-buttons" *ngIf="showDropdown" >   
              <div class="debut">
                  <label for="start">Start month:</label><input type="month" id="start" name="start" [(ngModel)]="selectedMonthStart">

@@ -35,7 +35,16 @@
     border: none;
     cursor: pointer;
   }
-  
+  .vertical-line {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 2px;
+    height: 100%;
+    border-left: 2px solid #000;
+    background-color: #000;
+    margin-left: 250px;
+  }
   .input-container{
     padding-left: 60px;
     width: 50%;
